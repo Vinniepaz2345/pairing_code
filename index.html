@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Pairing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Pairing</h1>
+        <p>Enter your WhatsApp number and get a pairing code.</p>
+        
+        <form id="whatsappForm">
+            <label for="phoneNumber">Your WhatsApp Number (with country code):</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+1234567890" required>
+            <button type="submit">Generate Pairing Code</button>
+        </form>
+
+        <div id="pairingSection" style="display: none;">
+            <h2>Scan the Pairing Code</h2>
+            <p>Copy the pairing code below and link it with your WhatsApp.</p>
+            <textarea id="pairingCode" readonly></textarea>
+            <button id="copyButton">Copy Pairing Code</button>
+        </div>
+
+        <div id="sessionIdSection" style="display: none;">
+            <h2>Session ID</h2>
+            <p>Your session ID has been sent to your WhatsApp!</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
